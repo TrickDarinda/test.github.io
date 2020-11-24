@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Informance</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        var userAgent = navigator.userAgent;
+
+        if(userAgent.toLowerCase().match("android")){
+            document.getElementById("demo").innerHTML = "Android";
+        }else if(userAgent.toLowerCase().match("iphone")){
+            document.getElementById("demo").innerHTML = "iPhone";
+        }else{
+            document.getElementById("demo").innerHTML = "Other";
+        }
+    </script>
+</body>
+
+</html>
